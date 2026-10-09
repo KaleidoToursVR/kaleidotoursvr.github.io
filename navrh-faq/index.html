@@ -1,0 +1,241 @@
+<!DOCTYPE html><html lang="cs"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Návrh FAQ pro vyhledávače (ke schválení) | Kaleido</title><meta property="og:title" content="Návrh FAQ pro vyhledávače (ke schválení) | Kaleido"><meta property="og:type" content="website"><meta property="og:image" content="https://kaleido.tours/og-image.jpg"><link rel="icon" href="/favicon.ico" sizes="32x32"><link rel="icon" href="/favicon-512.png" type="image/png" sizes="512x512"><link rel="apple-touch-icon" href="/favicon-180.png"><link rel="sitemap" href="/sitemap-index.xml"><meta name="robots" content="noindex, nofollow"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="/_astro/Base.C2Jhm7cN.css"><script type="module" src="/_astro/page.BAtihF69.js"></script></head><body><script>
+      document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('a[data-obf]').forEach((a) => {
+          try {
+            const v = decodeURIComponent(escape(atob(a.dataset.obf))).split('').reverse().join('');
+            // Tereza 2026-09-15: kontakty schválně neklikací (bez mailto:/tel:),
+            // jen čitelný text — další brzda pro roboty sbírající adresy.
+            a.removeAttribute('href');
+            const t = a.querySelector('[data-obf-text]') || a;
+            t.textContent = v;
+            t.classList.remove('obf-rtl');
+          } catch (e) {}
+        });
+      });
+    </script><header class="site-header site-header--float"><div class="wrap"><div class="site-header__bar site-header__inner"><a class="logo" href="/"><img src="/images/logo.png" alt="Kaleido" class="logo__img"></a><button class="nav-toggle" aria-label="Menu" aria-expanded="false" data-nav-toggle>☰</button><nav class="nav" data-nav><a href="/zazitky">Pro klienty a pacienty</a><a href="/edu">Pro personál</a><a href="/blog">Blog</a><a href="/kontakt">Kontakt</a><div class="nav__actions"><a class="nav__login" href="https://backend.oroi.eu" target="_blank" rel="noopener">Přihlásit se</a><a class="btn btn--primary" href="/vyzkouset">Vyzkoušet</a></div></nav></div></div></header><script type="module">var e=document.querySelector(`[data-nav-toggle]`),t=document.querySelector(`[data-nav]`);e?.addEventListener(`click`,()=>{let n=t?.getAttribute(`data-open`)===`true`;t?.setAttribute(`data-open`,String(!n)),e.setAttribute(`aria-expanded`,String(!n))});</script><main id="top"><section class="section"><div class="wrap"><div class="prose prose--old" style="max-width:860px"><h1>Návrh: otázky a odpovědi přepsané pro vyhledávače (2026-10-05)</h1>
+<p>Stav: <strong>návrh ke schválení</strong>, na web zatím nic nejde.</p>
+<h2>Zásady, podle kterých je to napsané</h2>
+<ul>
+<li>Každá stránka má 3 až 5 nosných výrazů. Výraz se v odpovědi objeví
+  jednou, nejlépe v první větě, a vždy ve větě, která dává smysl i bez něj.
+  Opakovat ho ve třech větách za sebou škodí (Google to od roku 2024
+  penalizuje jako „keyword stuffing“ a čtenáři to zní jako reklama).</li>
+<li>Otázka je formulovaná tak, jak ji lidé zadávají do vyhledávače
+  („Je virtuální realita vhodná pro seniory s demencí?“), ne jak se ptají
+  nás na schůzce („Zvládnou to naši senioři?“).</li>
+<li>První věta odpovědi odpovídá sama o sobě. Google i AI přehledy si berou
+  právě ji.</li>
+<li>3–10 otázek na stránku je ideál. U klientů je jich 22, návrh je zkrátit
+  na 12 a technické otázky (dezinfekce, dioptrie, epilepsie, psychózy)
+  přesunout do uživatelské sekce, kde patří. Pokud chcete nechat všech
+  22, SEO to nepoškodí, jen to nepomůže.</li>
+<li>Název firmy „Kaleido“ v odpovědích zůstává, ale nosné výrazy jsou
+  obecné: to jsou slova, která hledají lidé, kteří nás ještě neznají.</li>
+</ul>
+<h2>Nosné výrazy podle stránek</h2>
+<table>
+<thead>
+<tr>
+<th>Stránka</th>
+<th>Výrazy (od nejdůležitějšího)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pro klienty a pacienty (/zazitky)</td>
+<td>virtuální realita pro seniory · aktivizace seniorů · virtuální realita v domově pro seniory · VR brýle pro seniory · aktivizační činnosti</td>
+</tr>
+<tr>
+<td>Kaleido Zážitky</td>
+<td>virtuální výlety pro seniory · aktivizace imobilních klientů · vzpomínková terapie (reminiscence) · relaxace pro seniory</td>
+</tr>
+<tr>
+<td>Kognice</td>
+<td>kognitivní trénink seniorů · trénink paměti pro seniory · virtuální realita a demence</td>
+</tr>
+<tr>
+<td>Motorika</td>
+<td>trénink jemné motoriky seniorů · vizuomotorika · rehabilitace horních končetin</td>
+</tr>
+<tr>
+<td>Fit</td>
+<td>rotoped pro seniory · pohybová aktivizace · motomed</td>
+</tr>
+<tr>
+<td>Kaleido Edu (/edu)</td>
+<td>školení pečovatelů · vzdělávání pracovníků v sociálních službách · povinné vzdělávání 24 hodin · zaškolení nových pracovníků · standardy kvality sociálních služeb · komunikace s klientem s demencí</td>
+</tr>
+</tbody>
+</table>
+<p>Hledanost: přesná čísla nemám (Sklik / Search Console). Pořadí je podle
+toho, jak často se výrazy objevují v médiích, u MPSV a u konkurence.
+Po spuštění doladíme podle skutečných dotazů ze Search Console.</p>
+<hr />
+<h2>Pro klienty a pacienty — 12 otázek (místo 22)</h2>
+<h3>Virtuální realita a senioři</h3>
+<p><strong>Je virtuální realita vhodná pro seniory?</strong>
+Ano, virtuální realita je pro seniory vhodná, pokud je obsah přizpůsobený
+jejich potřebám: klidné scény, srozumitelný vypravěč a možnost zážitek
+kdykoliv ukončit. Kaleido od roku 2020 vzniká společně s aktivizačními
+pracovníky domovů pro seniory a dnes ho používá přes 150 zařízení v Česku
+a na Slovensku.</p>
+<p><strong>Je virtuální realita vhodná i pro seniory s demencí?</strong>
+Ano, i pro klienty s demencí, záleží na typu obsahu a stavu konkrétního
+člověka. Dobře známá místa a situace ve virtuální realitě pomáhají
+vybavovat vzpomínky, proto Kaleido dlouhodobě používají i domovy se
+zvláštním režimem. Zážitek lze kdykoliv okamžitě ukončit.</p>
+<p><strong>Nedělá se seniorům z virtuální reality špatně?</strong>
+Naprostá většina seniorů prožívá zážitky bez nevolnosti. Nevolnost ve
+virtuální realitě vzniká hlavně při rychlém pohybu, a tomu se obsah
+Kaleida vyhýbá: scény jsou natočené ze stoje nebo v sedě, bez jízdy
+a kamerových pohybů. Pokud by brýle někomu nesedly, pracovník je během
+chvíle sundá.</p>
+<p><strong>Dá se virtuální realita použít k aktivizaci imobilních klientů upoutaných na lůžko?</strong>
+Ano, právě pro ně Kaleido původně vzniklo. VR brýle jsou lehké, přenosné
+mezi pokoji a na jedno nabití s nimi obejdete až osm klientů. Aktivizace
+na lůžku tak nevyžaduje nic dalšího než brýle a pracovníka.</p>
+<h3>Práce s Kaleidem v zařízení</h3>
+<p><strong>Jak náročné je zavést virtuální realitu v domově pro seniory?</strong>
+Zavedení zvládne každé zařízení bez technického zázemí. Poštou přijde
+krabice s VR brýlemi a příslušenstvím, následuje online zaškolení a jde
+se za klienty. Nepotřebujete žádný počítač ani speciální telefon;
+propojení s tabletem je volitelné.</p>
+<p><strong>Zvládnou ovládání virtuální reality i senioři?</strong>
+Senior nemusí ovládat nic. Zážitky jsou záměrně pasivní, klient se jen
+dívá a pracovník drží ovládání v ruce. V interaktivních aplikacích
+reaguje senior přirozeným pohybem ruky nebo jedním tlačítkem podle
+instrukcí vypravěče.</p>
+<p><strong>Jaké aktivizační činnosti s virtuální realitou nabízíte?</strong>
+Virtuální výlety po Česku i do zahraničí, procházky přírodou, kulturní
+zážitky jako koncerty a muzea, relaxaci s dechovým cvičením, setkání se
+zvířaty a kognitivní trénink s pracovními listy. K tomu skupinové hry,
+při kterých jedny brýle zabaví celou skupinu, a interaktivní aplikace
+na paměť, motoriku a pohyb.</p>
+<p><strong>Neomrzí se virtuální zážitky seniorům?</strong>
+Knihovna má přes 120 zážitků a každý měsíc přibývají dva nové. Zážitky
+natáčí vlastní tým Kaleida, takže vznikají podle toho, co zařízení
+skutečně potřebují.</p>
+<h3>Bezpečnost a hygiena</h3>
+<p><strong>Jak se VR brýle dezinfikují a nemohou přenášet infekci?</strong>
+Riziko je blízké nule: klient se brýlí dotýká jen čelem, pracovník má
+vydezinfikované ruce a po skončení brýle otře neabrazivní dezinfekcí
+vhodnou na plasty a látky (například ubrousky Sanytol). Optickým čočkám
+se dezinfekce vyhýbá.</p>
+<p><strong>Co když někdo brýle rozbije?</strong>
+VR brýle jsou pojištěné a případnou spoluúčast platíme my. Když oprava
+nejde vyřešit na dálku, vyměníme brýle za nové.</p>
+<p><strong>Pro koho virtuální realita vhodná není?</strong>
+Nedoporučujeme ji klientům s epilepsií, kde by blízkost čoček u oka mohla
+spustit záchvat, a obvykle ani lidem se schizofrenií nebo jinou
+psychotickou poruchou. U dětí a mladistvých se zdravotním postižením
+naopak funguje dobře, používají ji i dětské nemocnice.</p>
+<p><strong>Co když narazíme na technický problém?</strong>
+Ve všední dny jsme na telefonu i na e-mailu a většinu věcí vyřešíme na
+dálku. V nejhorším případě pošleme nové brýle.</p>
+<p><em>Přesunout do uživatelské sekce (/manual): dioptrické brýle, speciální
+telefon/počítač, kdo zážitky vytváří, „jak víte, že se to líbí“.</em></p>
+<hr />
+<h2>Kaleido Edu — 10 otázek (místo 12)</h2>
+<h3>Co Edu je a pro koho</h3>
+<p><strong>Co je Kaleido Edu a jak školení pečovatelů ve virtuální realitě probíhá?</strong>
+Kaleido Edu je školení pracovníků v sociálních službách ve virtuální
+realitě. Každý modul se věnuje jednomu tématu péče, třeba polohování nebo
+komunikaci s klientem s demencí. Pracovník prožije situace z pohledu
+klienta, na konci vyplní kvíz přímo v brýlích a k modulu dostane
+pracovní listy. Modul trvá 15 až 20 minut a dá se přerušit.</p>
+<p><strong>Dá se Kaleido Edu započítat do povinného vzdělávání pracovníků v sociálních službách?</strong>
+Ano. Školení lze započítat do zákonného dalšího vzdělávání pracovníků
+v sociálních službách (24 hodin ročně, od roku 2025 48 hodin za dva
+roky). Po absolvování všech modulů vygenerujete osvědčení.</p>
+<p><strong>Hodí se Edu na zaškolení nových pracovníků, nebo i pro zkušené?</strong>
+Obojí. Nováčkům zkracuje zaškolení ve zkušební době a vedoucí díky
+výsledkům rychle vidí, na co se u koho zaměřit. U zkušených kolegů
+narušuje profesní slepotu, kdy se z postupů stane rutina. Zařízení ho
+používají i ke sjednocení postupů péče v celém týmu.</p>
+<p><strong>Kolik modulů školení obsahuje?</strong>
+Deset tematických modulů, například komunikace s klientem, podpora
+autonomie, stravování a pitný režim, péče o klienta s demencí, komunikace
+s rodinou nebo náročné situace v péči. Témata vznikají podle zpětné vazby
+zařízení, ne od stolu, a další přibývají.</p>
+<p><strong>Dá se Edu použít ve výuce na střední škole?</strong>
+Ano, střední školy sociálního zaměření ho zapojují do výuky jako první
+setkání studentů s praxí a nácvik měkkých dovedností.</p>
+<h3>Jak se to natáčí a kdo za tím stojí</h3>
+<p><strong>Kdo ve scénkách hraje?</strong>
+Skuteční pečovatelé z partnerských zařízení, ne herci. Scény se natáčejí
+360° kamerou z pohledu klienta, takže pracovník vidí péči z druhé strany.</p>
+<p><strong>Kdo garantuje odbornost obsahu?</strong>
+Lenka Tehrany, která má praxi ze sociálních služeb včetně školení postupů
+péče o seniory přímo v pobytových zařízeních. Obsah vznikal nejvíc
+s Domovem pro seniory Máj v Českých Budějovicích a Domovem pro seniory
+Chodov v Praze.</p>
+<p><strong>Pomáhá Edu i proti vyhoření personálu?</strong>
+Ano. Sociální služby jsou dlouhodobě pod tlakem, proto je součástí Edu
+sebepéče: konkrétní relaxační a dechové techniky pro zvládání stresu.</p>
+<h3>Provoz, výsledky a podpora</h3>
+<p><strong>Jak uvidíme výsledky školení?</strong>
+Vedoucí má webovou administraci s přehledem všech pracovníků: kdy modul
+absolvovali, jak odpověděli v kvízu a kde se jim daří méně. Po dokončení
+všech modulů s úspěšností nad 50 % lze vytisknout osvědčení.</p>
+<p><strong>Musíme si kupovat vlastní VR brýle?</strong>
+Nemusíte. Kaleido Edu se nejčastěji poskytuje jako měsíční nebo roční
+pronájem včetně brýlí, zaškolení, servisu, pojištění a technické podpory.</p>
+<p><strong>Kdo Kaleido Edu už používá?</strong>
+V Česku a na Slovensku naše školení pečovatelů ve virtuální realitě
+používá přes 40 organizací, od domovů pro seniory po střední školy.
+Některá zařízení ho zařazují už do zkušební doby nových pečovatelů, aby
+je rychleji poznala a mohla cíleně podpořit. Jazykové verze běží také ve
+Španělsku a ve Francii.</p>
+<p><em>Sloučeno: „Funguje i mimo Česko“ je v poslední odpovědi; „Co když u nás
+nikdo s VR nepracoval“ je pokryté v otázce o zavedení na stránce pro
+klienty, případně ji nechat i tady.</em></p>
+<hr />
+<h2>Mimo otázky a odpovědi — titulky stránek</h2>
+<p>Víc než FAQ rozhoduje titulek stránky (to, co je modře ve výsledku) a
+meta popis. Návrh:</p>
+<table>
+<thead>
+<tr>
+<th>Stránka</th>
+<th>Titulek (do 60 znaků)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Homepage</td>
+<td>Virtuální realita pro seniory a sociální péči · Kaleido</td>
+</tr>
+<tr>
+<td>/zazitky</td>
+<td>Virtuální realita pro seniory: aktivizace a trénink · Kaleido</td>
+</tr>
+<tr>
+<td>/zazitky/kaleido-zazitky</td>
+<td>Virtuální výlety a zážitky pro seniory · Kaleido Zážitky</td>
+</tr>
+<tr>
+<td>/zazitky/kognice</td>
+<td>Kognitivní trénink seniorů ve VR · Kaleido Kognice</td>
+</tr>
+<tr>
+<td>/zazitky/motorika</td>
+<td>Trénink jemné motoriky seniorů ve VR · Kaleido Motorika</td>
+</tr>
+<tr>
+<td>/zazitky/fit</td>
+<td>Rotoped s virtuální realitou pro seniory · Kaleido Fit</td>
+</tr>
+<tr>
+<td>/edu</td>
+<td>Školení pečovatelů ve virtuální realitě · Kaleido Edu</td>
+</tr>
+</tbody>
+</table>
+<h2>Co udělám po schválení</h2>
+<ol>
+<li>Nahradím texty v <code>src/i18n/content.ts</code> a titulky v <code>ui.ts</code>.</li>
+<li>Přidám strukturovaná data FAQPage na /zazitky a /edu.</li>
+<li>Přesunu technické otázky do uživatelské sekce.</li>
+<li>Po spuštění a napojení Search Console: za 4 až 6 týdnů zkontrolovat,
+   na jaké dotazy se stránky zobrazují, a doladit.</li>
+</ol></div></div></section></main><footer class="site-footer"><div class="wrap"><div class="footer__grid"><div><div class="logo" style="color:#fff">Kaleido VR Tours</div><p style="margin-top:12px">Virtuální realita pro sociální i zdravotní péči</p><ul class="social social--footer" aria-label="Sociální sítě"><li><a href="https://www.facebook.com/kaleido.tours" target="_blank" rel="noopener" title="Facebook" aria-label="Facebook"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.8c0-.9.3-1.5 1.6-1.5h1.7V4.4c-.3 0-1.3-.1-2.5-.1-2.5 0-4.1 1.5-4.1 4.2v2.3H7.4V14h2.8v8h3.3z"/></svg></a></li><li><a href="https://www.linkedin.com/company/flying-kale/" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M6.9 8.5H3.6V20h3.3V8.5zM5.3 3.5a1.9 1.9 0 1 0 0 3.8 1.9 1.9 0 0 0 0-3.8zM20.4 13c0-3.3-1.8-4.8-4.1-4.8-1.9 0-2.7 1-3.2 1.8V8.5H9.9V20h3.3v-5.7c0-1.5.3-3 2.2-3 1.8 0 1.8 1.7 1.8 3.1V20h3.3v-7z"/></svg></a></li><li><a href="https://www.youtube.com/channel/UC1NV3belR4tzoJFafwTzZIw" target="_blank" rel="noopener" title="YouTube" aria-label="YouTube"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10 15V9l5.2 3L10 15z"/></svg></a></li><li><a href="https://www.instagram.com/kaleido.vr/" target="_blank" rel="noopener" title="Instagram" aria-label="Instagram"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M12 7.3a4.7 4.7 0 1 0 0 9.4 4.7 4.7 0 0 0 0-9.4zm0 7.7a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm6-7.9a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0zM21 8.2c-.1-1.5-.4-2.8-1.5-3.9S17.1 2.9 15.6 2.8C14.1 2.7 9.9 2.7 8.4 2.8 6.9 2.9 5.6 3.2 4.5 4.3S3.1 6.7 3 8.2c-.1 1.5-.1 5.9 0 7.4.1 1.5.4 2.8 1.5 3.9s2.4 1.4 3.9 1.5c1.5.1 5.7.1 7.2 0 1.5-.1 2.8-.4 3.9-1.5s1.4-2.4 1.5-3.9c.1-1.5.1-5.9 0-7.4zm-2 9a3 3 0 0 1-1.7 1.7c-1.2.5-4 .4-5.3.4s-4.1.1-5.3-.4A3 3 0 0 1 5 17.2c-.5-1.2-.4-4-.4-5.3s-.1-4.1.4-5.3A3 3 0 0 1 6.7 4.9c1.2-.5 4-.4 5.3-.4s4.1-.1 5.3.4A3 3 0 0 1 19 6.6c.5 1.2.4 4 .4 5.3s.1 4.1-.4 5.3z"/></svg></a></li></ul></div><div><div class="footer__title">Produkt</div><ul class="footer__list"><li><a href="/zazitky/kaleido-zazitky">Kaleido Zážitky</a></li><li><a href="/zazitky/kognice">Kaleido Kognice</a></li><li><a href="/zazitky/motorika">Kaleido Motorika</a></li><li><a href="/zazitky/fit">Kaleido Fit</a></li><li><a href="/edu">Kaleido Edu</a></li></ul></div><div><div class="footer__title">Společnost</div><ul class="footer__list"><li><a href="/">O Kaleidu</a></li><li><a href="/zazitky">Pro klienty a pacienty</a></li><li><a href="/edu">Pro personál</a></li><li><a href="/blog">Blog</a></li><li><a href="/kontakt">Kontakt</a></li></ul></div><div><div class="footer__title">Kontakt</div><div class="footer__contacts"><div class="footer__contact"><div class="footer__contact-role">Péče o zákazníky</div><div class="footer__contact-note">Pro stávající uživatele — technika, provoz, podpora</div><a href="#" data-obf="c3J1b3Qub2RpZWxha0BlcmFj" data-kind="mail">care [zavináč] kaleido.tours</a><a href="#" data-obf="NzQ1IDQyMCAyMDcgMDI0Kw==" data-kind="tel" class="obf-rtl">745 420 207 024+</a></div><div class="footer__contact"><div class="footer__contact-role">Obchod — Čechy</div><div class="footer__contact-note">Pro nové zájemce — Jiří Kubíče</div><a href="#" data-obf="c3J1b3Qub2RpZWxha0BlY2lidWsuaXJpag==" data-kind="mail">jiri.kubice [zavináč] kaleido.tours</a><a href="#" data-obf="MjM0IDk2OSA0NzcgMDI0Kw==" data-kind="tel" class="obf-rtl">234 969 477 024+</a></div><div class="footer__contact"><div class="footer__contact-role">Obchod — Morava, Slezsko a Slovensko</div><div class="footer__contact-note">Pro nové zájemce — Andrea Malíková</div><a href="#" data-obf="c3J1b3Qub2RpZWxha0Bhdm9raWxhbS5hZXJkbmE=" data-kind="mail">andrea.malikova [zavináč] kaleido.tours</a><a href="#" data-obf="NDI4IDE4MSA2NzcgMDI0Kw==" data-kind="tel" class="obf-rtl">428 181 677 024+</a></div><div class="footer__contact"><div class="footer__contact-role">Pro média a nabídky spolupráce</div><a href="#" data-obf="c3J1b3Qub2RpZWxha0Bhdm9tZWRva2luLmF6ZXJldA==" data-kind="mail">tereza.nikodemova [zavináč] kaleido.tours</a><a href="#" data-obf="NTU2IDI0MiAwMjcgMDI0Kw==" data-kind="tel" class="obf-rtl">556 242 027 024+</a></div><div class="footer__contact footer__contact--company"><div>Karmelitská 379/18, 118 00 Praha 1</div><div>IČO 03956938</div></div></div></div></div><div class="footer__bottom"><span>© 2020–2026 Flying Kale s.r.o. Všechna práva vyhrazena.</span><span>Bankovní spojení: 254983537/0600</span><span><a href="/zpracovani-osobnich-udaju">Zpracování osobních údajů</a></span><span><a href="/kontakt">Kontakt</a></span></div></div></footer></body></html>
