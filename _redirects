@@ -1,0 +1,40 @@
+# Cloudflare Pages redirects: old WordPress URLs -> new structure (see REDIRECTS.md).
+# Both the form with and without the trailing slash are listed on purpose.
+/kaleido-interaktivni-virtualni-nastroje /pro-klienty 301
+/kaleido-interaktivni-virtualni-nastroje/ /pro-klienty 301
+/tym / 301
+/tym/ / 301
+/cenik-cz / 301
+/cenik-cz/ / 301
+/cenik-sk / 301
+/cenik-sk/ / 301
+/press-kit / 301
+/press-kit/ / 301
+/pribehy /pro-klienty 301
+/pribehy/ /pro-klienty 301
+/otazky-a-odpovedi /pro-klienty#faq 301
+/otazky-a-odpovedi/ /pro-klienty#faq 301
+
+# Old German section of the WordPress site -> new German version (see REDIRECTS.md)
+/de/faq /de/pro-klienty#faq 301
+/de/faq/ /de/pro-klienty#faq 301
+/de/tym /de/ 301
+/de/tym/ /de/ 301
+/de/impressum /de/kontakt 301
+/de/impressum/ /de/kontakt 301
+/de/ambassadorprogramm /de/ 301
+/de/ambassadorprogramm/ /de/ 301
+/de/benutzerbereich /de/manual 301
+/de/benutzerbereich/ /de/manual 301
+/handbuch /de/manual-aktivizace-quest-2 301
+/handbuch/ /de/manual-aktivizace-quest-2 301
+/de/blog /de/ 301
+/de/blog/ /de/ 301
+/de-pilot /de/ 301
+/de-pilot/ /de/ 301
+/at-pilot /de/ 301
+/at-pilot/ /de/ 301
+/dach-pilot /de/ 301
+/dach-pilot/ /de/ 301
+/ch-pilot-test /de/ 301
+/ch-pilot-test/ /de/ 301
